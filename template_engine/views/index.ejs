@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>EJS - express template engine</title>
+    </head>
+    <body>
+        <% users.forEach(function(user){ %>
+            <h3><%= user.name %></h3>
+            <!--
+                <% %> - Write code
+                <%= %> - Print value
+                Most importantly these template engine also apply in the comment
+            -->
+        <% }) %>
+    </body>
+</html>

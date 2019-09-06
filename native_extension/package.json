@@ -1,0 +1,19 @@
+{
+  "name": "native_extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "use_native_lib.js",
+  "scripts": {
+    "compile": "node-gyp rebuild",
+    "start": "node use_native_lib.js"
+  },
+  "gypfile": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.14.0",
+    "node-gyp": "^5.0.3",
+    "socket.io": "^2.2.0"
+  }
+}
