@@ -1,5 +1,5 @@
 # Learn-NodeJS
-My personal node learning repository.
+My personal NodeJS learning repository.
 
 
 ## Learning Path
@@ -25,6 +25,11 @@ My personal node learning repository.
   - Middleware
   - Parameters, query strings and body
   - Templating Engine
+- ToDo Application
+  - Node with API structure
+  - Authentication in NodeJS
+  - APIs and Web
+  - Understanding server-side JS (Node) and client-side JS and it's separation
 
 
 ### Learning from Udemy course "Learn and Understand NodeJS"

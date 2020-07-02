@@ -1,0 +1,5 @@
+{
+    "username": "todoDBuser",
+    "password": "todoMongoP",
+    "connectionString": "mongodb+srv://todoDBuser:todoMongoP@meanlearning-7qmzl.mongodb.net/test?retryWrites=true&w=majority"
+}

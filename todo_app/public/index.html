@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf 8">
+    <title>ToDo Application</title>
+</head>
+
+<body ng-app="app">
+    <div>
+        <table ng-controller="ToDoCtrl">
+            <tr>
+                <th>isDone</th>
+                <th>ToDo-Message</th>
+                <th>Delete</th>
+            </tr>
+            <tr ng-repeat="todo in todos">
+                <td>{{todo.isDone}}</td>
+                <td>{{todo.todo}}</td>
+                <td><button id="{{todo._id}}" onclick="doRemove(this.id)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+    <script>  
+        $.ajax('/api/todos/', {
+            success: function (data, status, xhr) {// success callback function
+                // debugger;
+                angular.module("app", []).controller("ToDoCtrl", function($scope) {  
+                    $scope.todos = data;
+                });
+            }
+        });
+
+        function doRemove(id){
+            console.log("Remove:" + id);
+        }
+    </script>
+</body>
+
+</html>
